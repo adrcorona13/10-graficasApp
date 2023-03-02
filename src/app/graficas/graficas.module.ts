@@ -1,9 +1,13 @@
 import { NgModule } from "@angular/core";
+
+import { NgChartsModule } from 'ng2-charts';
+
 import { GraficaBarraComponent } from './components/grafica-barra/grafica-barra.component';
 import { BarrasComponent } from './pages/barras/barras.component';
 import { BarrasDobleComponent } from "./pages/barras-doble/barras-doble.component";
 import { DonaComponent } from './pages/dona/dona.component';
 import { DonaHttpComponent } from './pages/dona-http/dona-http.component';
+
 import { GraficasRoutingModule } from './graficas-routing.module';
 
 @NgModule({
@@ -15,7 +19,8 @@ import { GraficasRoutingModule } from './graficas-routing.module';
         DonaHttpComponent
     ],
     imports: [
-        GraficasRoutingModule
+        GraficasRoutingModule,
+        NgChartsModule
     ]
 })
 export class GraficasModule { }
