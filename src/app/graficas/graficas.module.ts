@@ -9,6 +9,7 @@ import { DonaComponent } from './pages/dona/dona.component';
 import { DonaHttpComponent } from './pages/dona-http/dona-http.component';
 
 import { GraficasRoutingModule } from './graficas-routing.module';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -19,8 +20,9 @@ import { GraficasRoutingModule } from './graficas-routing.module';
         DonaHttpComponent
     ],
     imports: [
+        CommonModule,
+        NgChartsModule,
         GraficasRoutingModule,
-        NgChartsModule
     ]
 })
 export class GraficasModule { }
